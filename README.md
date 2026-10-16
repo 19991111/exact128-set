@@ -23,7 +23,7 @@ This repository contains one delivery version and its required verification help
 
 The `validation/baseline/` files are dependencies of the preserved gate runner.
 They are not alternative recommended versions.
-Large experiment records and recorded input downloads are release assets.
+Large experiment records and raw input files are not published in this source release.
 No earlier development history is imported.
 
 ## Verify the download
@@ -52,9 +52,9 @@ Output files must not already exist. Results remain outside the repository.
 The boundary command succeeds when it reproduces the expected rejection.
 It is a regression check of a known limitation, not a passing statistical group.
 
-Download the [release assets](https://github.com/19991111/exact128-set/releases/tag/v1r4-source) for the recorded binary input and all 100,000 per-group records.
-The complete CSV contains each original seed and input hash.
-To reproduce another saved group, provide the downloaded CSV and one group identifier:
+Download the [source release](https://github.com/19991111/exact128-set/releases/tag/v1r4-source) for a clean source archive and its checksum.
+The complete per-group records and raw input files remain outside this repository.
+If you separately hold an original per-group CSV, provide that file and one group identifier:
 
 ```text
 python3 -B tools/reproduce.py --case-id 53776 --records /tmp/v1r4-100k-per-case.csv.gz --output /tmp/exact128-case53776.json

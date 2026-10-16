@@ -45,8 +45,8 @@ python3 -B tools/reproduce.py --boundary --output /tmp/exact128-boundary.json
 这些依赖不作为新的推荐算法版本。
 历史实验、运行队列、工具缓存、业务资料和原题截图未带入本仓库。
 
-[发布页](https://github.com/19991111/exact128-set/releases/tag/v1r4-source)提供十万组逐组记录和一个保留输入的下载。
-逐组记录保留全部原种子和输入SHA256。
+[发布页](https://github.com/19991111/exact128-set/releases/tag/v1r4-source)只提供干净源码包和下载校验值。
+十万组逐组记录和原始输入未公开发布。
 原始研究仓库和完整运行归档保持独立。
 
 固定候选提交：`133211a2efe88a1403e3d80d6e83007248936359`。

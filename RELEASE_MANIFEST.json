@@ -44,8 +44,8 @@
     },
     {
       "path": "docs/VALIDATION.md",
-      "bytes": 4935,
-      "sha256": "4eafcdeb9e224b39bf07d2391b2667c09ed1cd38c007c710d9803e8d4cf4be76"
+      "bytes": 5011,
+      "sha256": "3e23ee6bd4fe088a83f1d998c6abdf5c1573a392e5d2eec47e51d9145134c6a2"
     },
     {
       "path": "evaluation/conflict_histogram.csv",
@@ -59,8 +59,8 @@
     },
     {
       "path": "evaluation/RELEASE_ASSETS.json",
-      "bytes": 630,
-      "sha256": "0cfbd364d25152371cf2f62741f46995fab30e37bf708d7e0589a1551ef043ee"
+      "bytes": 322,
+      "sha256": "17daf41208265455dd6627b59fc0c082692849a52f4c915d43c1f9327c548d6a"
     },
     {
       "path": "evaluation/strata_independent.csv",
@@ -164,13 +164,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 4751,
-      "sha256": "65f6a7cfbe1b61b6b48ea7b3657fbbb64f667e435bd8547040a5a16f4506f106"
+      "bytes": 4773,
+      "sha256": "a849522f9c68d5025e07e9d6fa63feed8b4df141b8520ddd3a1e55ff00d3297d"
     },
     {
       "path": "README.zh-CN.md",
-      "bytes": 2540,
-      "sha256": "e64f05bcee5cbcb0d74b7e1c22a4343cc8664bf6ad0f57075788d153fbed5fdb"
+      "bytes": 2528,
+      "sha256": "499491fe89914565f3cb86c0b26e6ff5c882699dc532e1cf4d908772fb1e5b54"
     },
     {
       "path": "SOURCE_PROVENANCE.json",

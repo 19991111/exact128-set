@@ -5,7 +5,7 @@
 The software suite completed 100,000 groups of 256,000 distinct 128-bit keys.
 The ten frozen configurations contain 10,000 groups each.
 The published result is tied to commit `cbdc97bbae8ecab66e9008a6622152741c31cb85` in the original evidence archive.
-The release CSV preserves the original per-case file bytes after gzip decompression.
+Complete per-case records and raw input files are not published in this source release.
 
 | Conflict statistic | Value |
 |---|---:|
@@ -76,8 +76,9 @@ The root README gives commands for a recorded group and the known boundary.
 These commands run only on native Linux with assertions enabled.
 The case helper reconstructs original keys from the recorded seed and checks the original input hash.
 It never chooses a new seed.
-Pass `--input` with the downloaded binary to read the retained original group 0 directly.
-Use `--records` with the downloaded .csv.gz file to select another original group.
+If you separately hold the recorded binary, pass `--input` to read original group 0 directly.
+If you separately hold the per-case CSV, use `--records` to select another original group.
+Those data files are not part of the public source download.
 
 ## Full preserved gates
 
