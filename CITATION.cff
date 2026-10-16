@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "Cite the fixed commit or release used by your report."
+type: software
+title: "Exact128 Set: exact 128-bit membership under storage and access constraints"
+authors:
+  - name: "19991111"
+version: "v1r4-source"
+date-released: "2026-10-16"
+repository-code: "https://github.com/19991111/exact128-set"
+url: "https://github.com/19991111/exact128-set/releases/tag/v1r4-source"

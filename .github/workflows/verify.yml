@@ -1,0 +1,22 @@
+name: Verify source artifact
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  integrity-and-fixed-reproduction:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: '3.11'
+      - name: Verify source and small evidence tables
+        run: python -B tools/verify_release.py
+      - name: Reproduce the known boundary
+        run: python -B tools/reproduce.py --boundary --output "$RUNNER_TEMP/exact128-boundary.json"
+      - name: Reproduce original group 0
+        run: python -B tools/reproduce.py --case-id 0 --output "$RUNNER_TEMP/exact128-case0.json"

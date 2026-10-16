@@ -1,0 +1,164 @@
+{
+  "result_commit": "cbdc97bbae8ecab66e9008a6622152741c31cb85",
+  "source_package_commit": "6c1f71767df24af188fe75900f4ecbc5bd8c9c69",
+  "plan_sha256": "321b8452722fe5c3eef84001441653624fded55ccc4e32b61d6222879a38b9f7",
+  "totals": {
+    "records": 100000,
+    "min_conflicts": 118,
+    "max_conflicts": 235,
+    "conflicts": 17372510,
+    "rejected": 0,
+    "accepted": 25600000000,
+    "member_queries": 25600000000,
+    "nonmember_probes": 409600000,
+    "actual_negative_probes": 409600000,
+    "duplicates": 99700000,
+    "successful": 100000,
+    "failed": 0
+  },
+  "strata": {
+    "bits:0": {
+      "records": 10000,
+      "min_conflicts": 122,
+      "max_conflicts": 235,
+      "conflict_sum": 1737563,
+      "rejected": 0,
+      "seconds": 66621.08498906881,
+      "mean_conflicts": 173.7563
+    },
+    "bits:1": {
+      "records": 10000,
+      "min_conflicts": 126,
+      "max_conflicts": 224,
+      "conflict_sum": 1736849,
+      "rejected": 0,
+      "seconds": 71213.00015164762,
+      "mean_conflicts": 173.6849
+    },
+    "even_mod:0": {
+      "records": 10000,
+      "min_conflicts": 118,
+      "max_conflicts": 228,
+      "conflict_sum": 1737989,
+      "rejected": 0,
+      "seconds": 63686.23833163938,
+      "mean_conflicts": 173.7989
+    },
+    "even_mod:1": {
+      "records": 10000,
+      "min_conflicts": 127,
+      "max_conflicts": 230,
+      "conflict_sum": 1736786,
+      "rejected": 0,
+      "seconds": 72102.61684375291,
+      "mean_conflicts": 173.6786
+    },
+    "nowrap:0": {
+      "records": 10000,
+      "min_conflicts": 125,
+      "max_conflicts": 235,
+      "conflict_sum": 1739275,
+      "rejected": 0,
+      "seconds": 66686.11053124792,
+      "mean_conflicts": 173.9275
+    },
+    "nowrap:1": {
+      "records": 10000,
+      "min_conflicts": 119,
+      "max_conflicts": 225,
+      "conflict_sum": 1739237,
+      "rejected": 0,
+      "seconds": 63788.21141143014,
+      "mean_conflicts": 173.9237
+    },
+    "odd_mod:0": {
+      "records": 10000,
+      "min_conflicts": 127,
+      "max_conflicts": 230,
+      "conflict_sum": 1733739,
+      "rejected": 0,
+      "seconds": 63385.393438119114,
+      "mean_conflicts": 173.3739
+    },
+    "odd_mod:1": {
+      "records": 10000,
+      "min_conflicts": 123,
+      "max_conflicts": 232,
+      "conflict_sum": 1735685,
+      "rejected": 0,
+      "seconds": 63687.555436313145,
+      "mean_conflicts": 173.5685
+    },
+    "random:0": {
+      "records": 10000,
+      "min_conflicts": 125,
+      "max_conflicts": 228,
+      "conflict_sum": 1737311,
+      "rejected": 0,
+      "seconds": 64453.09026652934,
+      "mean_conflicts": 173.7311
+    },
+    "random:1": {
+      "records": 10000,
+      "min_conflicts": 126,
+      "max_conflicts": 227,
+      "conflict_sum": 1738076,
+      "rejected": 0,
+      "seconds": 64416.8095130554,
+      "mean_conflicts": 173.8076
+    }
+  },
+  "conflict_quantiles_nearest_rank": {
+    "0.5": 174,
+    "0.95": 197,
+    "0.99": 208,
+    "0.999": 219
+  },
+  "mean_conflicts": 173.7251,
+  "max_conflict_rate_percent": 0.091796875,
+  "mean_conflict_rate_percent": 0.0678613671875,
+  "worst_cases": [
+    {
+      "id": 53776,
+      "family": "bits",
+      "variant": 0,
+      "conflicts": 235,
+      "input_sha": "e0c7aa1e58832238930e45281e871b15e9b29908eef2678972d85ecde9e9ea95"
+    },
+    {
+      "id": 93002,
+      "family": "nowrap",
+      "variant": 0,
+      "conflicts": 235,
+      "input_sha": "eba334fc0f0ced38caa8dde82e09693ecd6b1ad7f3a59825af8455584baf94bc"
+    }
+  ],
+  "counterexample": {
+    "check_passed": true,
+    "conflicts": 513,
+    "input_sha256": "849719b7c5719201f15230a4b52cdf044dd56d05ae710b0253b7b76fe5336c04",
+    "interpretation": "Expected counterexample to unrestricted-input conflict guarantee; NOT a passing statistical case.",
+    "keys": 514,
+    "rejected": 1
+  },
+  "model_storage_bits": 35725312,
+  "official_acceptance": false,
+  "physical_chip_verified": false,
+  "full_size_rtl_verified": false,
+  "status_totals": {
+    "2": 25582627490,
+    "6": 17372510
+  },
+  "candidate_source_commit": "133211a2efe88a1403e3d80d6e83007248936359",
+  "independent_review_type": "Static evidence integrity and consistency review; not a local algorithm rerun.",
+  "public_export_scope": "Derived summary and exact small CSVs. Full operational archive remains separate.",
+  "archive_sha256": "054c2a7848f35d1ec769a3a537a3228f2ca7d41af27ddde6d830475ae67eb4c2",
+  "limitations": [
+    "Self-built inputs are not Huawei-designated acceptance or business data.",
+    "Recorded member checks were executed by the original workers, not repeated by static review.",
+    "Only 20 formal input files and 4 interrupted input files were retained and parsed locally.",
+    "The original run includes two CPU models; elapsed time is not a controlled CPU benchmark.",
+    "The 514-key constructed boundary is excluded from the 100000 statistical groups.",
+    "This public packaging has not rerun the full formal and RTL gate campaign."
+  ]
+}

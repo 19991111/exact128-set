@@ -1,0 +1,154 @@
+{
+  "version": "huawei128_wide50_w128_aux512_v1r4",
+  "files": [
+    {
+      "path": "baseline_copy_manifest.json",
+      "bytes": 1228,
+      "sha256": "01da8f16db682ccc41c00de37dbc1068118f43f6068da1e4261e31df6be3602b"
+    },
+    {
+      "path": "DESIGN.txt",
+      "bytes": 6462,
+      "sha256": "790b855eaacbc23ba3108b103c71869c6a34f18041943d186fc5f572d7642f67"
+    },
+    {
+      "path": "evidence/ENGINEERING_DEFAULTS.txt",
+      "bytes": 5768,
+      "sha256": "db9af3a8261de3a8cf911e7e79d73b660e85e757c59aba2d58e728359dcd273b"
+    },
+    {
+      "path": "evidence/faq.png",
+      "bytes": 316006,
+      "sha256": "78fb2316c6ed34fceef9cd5f7eeb3e87464bf9cbf31541294509299fe819227f"
+    },
+    {
+      "path": "evidence/problem.png",
+      "bytes": 1090340,
+      "sha256": "5089e5ffc94a9a50a3fef15842ed5335f49f96817f32a72649611809e75c845d"
+    },
+    {
+      "path": "PROTOCOL.txt",
+      "bytes": 4439,
+      "sha256": "30d89197b98f77edcae4db8666389e04dfbd9cb1c34ac5d58eff5993f468de04"
+    },
+    {
+      "path": "provenance.json",
+      "bytes": 1298,
+      "sha256": "cf9bd6d2bf5793ed06c75667e2bd40114c87366ce4f125376e2f481876baf513"
+    },
+    {
+      "path": "README.txt",
+      "bytes": 2783,
+      "sha256": "c4a887f02d692d45cceada9fbee50c4554aff004b2ada9387256f7844237657b"
+    },
+    {
+      "path": "reference.py",
+      "bytes": 8545,
+      "sha256": "dfada509c02fb773b8baeba02b508e81b08730ac967e379df52eeb0824f3c5ef"
+    },
+    {
+      "path": "REQUIREMENTS.txt",
+      "bytes": 1931,
+      "sha256": "531ccaf5497f704592ca20065c22330184743fe17a39ce6f08de0b85681bbf6a"
+    },
+    {
+      "path": "REVISION.json",
+      "bytes": 9080,
+      "sha256": "dce7839ebad3963ecdeb1ed8733ff313bb5402711dafce9cb518094914dbc6d8"
+    },
+    {
+      "path": "rtl/huawei128_core.v",
+      "bytes": 8456,
+      "sha256": "275f32975adf0f4bf3efc0b0b0a1daca6bf514b13102bc539f7f8364b501a8f2"
+    },
+    {
+      "path": "rtl/huawei128_hash.v",
+      "bytes": 3369,
+      "sha256": "d4924c4c8417f66f7f319949f31935f3215030b8a4aad561f7aa2e0d435ecde1"
+    },
+    {
+      "path": "rtl/huawei128_memory.v",
+      "bytes": 1717,
+      "sha256": "024d54b6fc8c5b0fde9796cd91e5e6bbb1ca71ba53a5dde28eb88e262cbe9d4a"
+    },
+    {
+      "path": "run_cloud.py",
+      "bytes": 9849,
+      "sha256": "6ea1f0907d5442163bd8f74730124f91cb94f5154c9382fe7c16048789808c58"
+    },
+    {
+      "path": "run_validation.py",
+      "bytes": 6795,
+      "sha256": "85d4e942bb0f550687e48453d0266a0653a6c7b7179323338a5cc7f151dd2093"
+    },
+    {
+      "path": "toolchain_lock.json",
+      "bytes": 145772,
+      "sha256": "c2448b1c659d7a39a72c25f5e3a7b1a372c09e0c550c6a67c240537d64717aee"
+    },
+    {
+      "path": "TOOLCHAIN_NOTES.txt",
+      "bytes": 2056,
+      "sha256": "20d45efa5be6bbd7b61e67d6a6ce5932e86e5886133760613fa085b6a1fc174b"
+    },
+    {
+      "path": "toolchain_runtime.py",
+      "bytes": 7001,
+      "sha256": "72c9e5a9b44f866782dfdf850db595e5c411e7eb9ddff9a6fcfceee2280d77f3"
+    },
+    {
+      "path": "validation/baseline/candidate1_power2.py",
+      "bytes": 10600,
+      "sha256": "f1b06ccb6226e5c2115ff401e1730082eddd92958a853889be8195c39f44ea49"
+    },
+    {
+      "path": "validation/baseline/candidate1_power2_circuit.py",
+      "bytes": 2142,
+      "sha256": "9ddb21172daa0daac45fd2665049b16a55b61caeab839847df18419cf37dcb45"
+    },
+    {
+      "path": "validation/baseline/candidate1_power2_exact.py",
+      "bytes": 2156,
+      "sha256": "b5de02ad0a697232afb5b725b01f8aa6a0e5fd785e13b9bdc1a779746d110331"
+    },
+    {
+      "path": "validation/baseline/candidate1_power2_wide.py",
+      "bytes": 9060,
+      "sha256": "46e53b12d49992ce2e2f0799353304be28e1faa8a10cd25bfcc9d07db0032026"
+    },
+    {
+      "path": "validation/baseline/power2_datapath.py",
+      "bytes": 8829,
+      "sha256": "12ce55194695235fce78f198fbdc38a34f23d5cd1719afb4193416bfa46e4bd5"
+    },
+    {
+      "path": "validation/huawei128_testbench.v",
+      "bytes": 6859,
+      "sha256": "cea813b4be944621ffff79afdd1c25fae42d750f54d27f87a788e6f94b12b25b"
+    },
+    {
+      "path": "validation/legacy_hash.v",
+      "bytes": 3511,
+      "sha256": "e4eb4f96cf87d215bca3007f2fb93d10bed03639edc1f5cf303ea8fbd76cc927"
+    },
+    {
+      "path": "validation/proofs.v",
+      "bytes": 4757,
+      "sha256": "e157338bcd22f007daa1751165a008fa49b9aa89203b47d82b366e2a8c436ca6"
+    },
+    {
+      "path": "validation/semantic_checks.py",
+      "bytes": 9706,
+      "sha256": "f81ae2d3428d6c582227338e2863bbf001813ac6ab9441d406b00f09d90f475c"
+    },
+    {
+      "path": "verify_source.py",
+      "bytes": 2396,
+      "sha256": "ce0084901d679b3174884ff0d19ac205c2cb7c821d53a3bd8792aa53b0adf0b1"
+    }
+  ],
+  "source_fixed_before_native_validation": true,
+  "algorithm_runs_locally": 0,
+  "experimental_keys_generated_locally": false,
+  "official_acceptance": false
+}

@@ -1,0 +1,22 @@
+{
+  "tag": "v1r4-source",
+  "upstream_result_commit": "cbdc97bbae8ecab66e9008a6622152741c31cb85",
+  "assets": [
+    {
+      "name": "v1r4-100k-per-case.csv.gz",
+      "bytes": 10030221,
+      "sha256": "afc8fe8eb7d68c5fb3d8b82fd17a9fc1ca4362f80927b8150f71907c00359561"
+    },
+    {
+      "name": "v1r4-recorded-case-0000000.bin",
+      "bytes": 4096000,
+      "sha256": "58a081dda1ef4b78ae86f5a18daa1aac8e0d543c52cfd3c0680d128a57b6253a"
+    }
+  ],
+  "uncompressed_csv": {
+    "name": "per_case.csv",
+    "bytes": 24920660,
+    "sha256": "e8900b838616b5638be1e7a79b164208e8183e0b1e9aa2de6e269667e9485ee3",
+    "rows": 100000
+  }
+}

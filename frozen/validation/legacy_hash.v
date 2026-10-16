@@ -1,0 +1,66 @@
+module p2_hash_left(input wire [127:0] key,
+  output wire [127:0] value, output wire [13:0] address);
+  wire [255:0] h0 = {128'b0, key};
+  wire [255:0] h1 = h0 * 256'h9e3779b97f4a7c15d1b54a32d192ed03;
+  wire [255:0] h2 = h1 & 256'hffffffffffffffffffffffffffffffff;
+  wire [255:0] h3 = h2 ^ 256'he1d86738a4c7ad2448e183a5c314c87e;
+  wire [255:0] h4 = h3 * 256'h100000000000000000000000000000001;
+  wire [255:0] h5 = h4 >> 256'h25;
+  wire [255:0] h6 = h5 & 256'hffffffffffffffffffffffffffffffff;
+  wire [255:0] h7 = h6 * 256'hd6e8feb86659fd9394d049bb133111eb;
+  wire [255:0] h8 = h7 & 256'hffffffffffffffffffffffffffffffff;
+  wire [255:0] h9 = h8 ^ 256'h977872700329217bdbdb36dc65388ecd;
+  wire [255:0] h10 = h9 * 256'h100000000000000000000000000000001;
+  wire [255:0] h11 = h10 >> 256'h49;
+  wire [255:0] h12 = h11 & 256'hffffffffffffffffffffffffffffffff;
+  wire [255:0] h13 = h12 * 256'ha24baed4963ee4079fb21c651e98df25;
+  wire [255:0] h14 = h13 & 256'hffffffffffffffffffffffffffffffff;
+  wire [255:0] h15 = h14 ^ 256'h533f9f78fd7509f0fe5e78ee66fb2ca3;
+  wire [255:0] h16 = h15 * 256'h100000000000000000000000000000001;
+  wire [255:0] h17 = h16 >> 256'h1d;
+  wire [255:0] h18 = h17 & 256'hffffffffffffffffffffffffffffffff;
+  wire [255:0] h19 = h18 * 256'hdb4f0b9175ae2165bbe0563303a4615f;
+  wire [255:0] h20 = h19 & 256'hffffffffffffffffffffffffffffffff;
+  wire [255:0] h21 = h20 ^ 256'h85ba24b712cece43cf4ef5d0db781bc2;
+  wire [255:0] h22 = h21 * 256'h100000000000000000000000000000001;
+  wire [255:0] h23 = h22 >> 256'h5b;
+  wire [255:0] h24 = h23 & 256'hffffffffffffffffffffffffffffffff;
+  wire [255:0] h25 = h24 & 256'h3fff;
+  assign value = h24[127:0];
+  assign address = h25[13:0];
+endmodule
+
+module p2_hash_right(input wire [127:0] key,
+  output wire [127:0] value, output wire [13:0] address);
+  wire [255:0] h0 = {128'b0, key};
+  wire [255:0] h1 = h0 * 256'h9e3779b97f4a7c15d1b54a32d192ed03;
+  wire [255:0] h2 = h1 & 256'hffffffffffffffffffffffffffffffff;
+  wire [255:0] h3 = h2 ^ 256'he1d86738a4c7ad2448e183a5c314c87e;
+  wire [255:0] h4 = h3 * 256'h100000000000000000000000000000001;
+  wire [255:0] h5 = h4 >> 256'h25;
+  wire [255:0] h6 = h5 & 256'hffffffffffffffffffffffffffffffff;
+  wire [255:0] h7 = h6 * 256'hd6e8feb86659fd9394d049bb133111eb;
+  wire [255:0] h8 = h7 & 256'hffffffffffffffffffffffffffffffff;
+  wire [255:0] h9 = h8 ^ 256'h977872700329217bdbdb36dc65388ecd;
+  wire [255:0] h10 = h9 * 256'h100000000000000000000000000000001;
+  wire [255:0] h11 = h10 >> 256'h49;
+  wire [255:0] h12 = h11 & 256'hffffffffffffffffffffffffffffffff;
+  wire [255:0] h13 = h12 * 256'ha24baed4963ee4079fb21c651e98df25;
+  wire [255:0] h14 = h13 & 256'hffffffffffffffffffffffffffffffff;
+  wire [255:0] h15 = h14 ^ 256'h533f9f78fd7509f0fe5e78ee66fb2ca3;
+  wire [255:0] h16 = h15 * 256'h100000000000000000000000000000001;
+  wire [255:0] h17 = h16 >> 256'h1d;
+  wire [255:0] h18 = h17 & 256'hffffffffffffffffffffffffffffffff;
+  wire [255:0] h19 = h18 * 256'hdb4f0b9175ae2165bbe0563303a4615f;
+  wire [255:0] h20 = h19 & 256'hffffffffffffffffffffffffffffffff;
+  wire [255:0] h21 = h20 ^ 256'h85ba24b712cece43cf4ef5d0db781bc2;
+  wire [255:0] h22 = h21 * 256'h100000000000000000000000000000001;
+  wire [255:0] h23 = h22 >> 256'h5b;
+  wire [255:0] h24 = h23 & 256'hffffffffffffffffffffffffffffffff;
+  wire [255:0] h25 = h24 & 256'hfffffff;
+  wire [255:0] h26 = h25 * 256'h4001;
+  wire [255:0] h27 = h26 >> 256'he;
+  wire [255:0] h28 = h27 & 256'h3fff;
+  assign value = h24[127:0];
+  assign address = h28[13:0];
+endmodule

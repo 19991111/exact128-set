@@ -1,0 +1,77 @@
+{
+  "accepted": 256000,
+  "access_by_operation": {
+    "duplicate": [
+      1,
+      0,
+      2,
+      0,
+      1,
+      0
+    ],
+    "insert": [
+      1,
+      1,
+      2,
+      1,
+      1,
+      1
+    ],
+    "member": [
+      1,
+      0,
+      2,
+      0,
+      1,
+      0
+    ],
+    "probe": [
+      0,
+      0,
+      2,
+      0,
+      1,
+      0
+    ]
+  },
+  "access_maxima": [
+    1,
+    1,
+    2,
+    1,
+    1,
+    1
+  ],
+  "actual_negative_probes": 4096,
+  "conflicts": 188,
+  "duplicates": 997,
+  "elapsed_seconds": 4.627797105000013,
+  "execution_status": "completed",
+  "family": "random",
+  "id": 0,
+  "input_sha256": "58a081dda1ef4b78ae86f5a18daa1aac8e0d543c52cfd3c0680d128a57b6253a",
+  "member_queries": 256000,
+  "n": 256000,
+  "nonmember_probes": 4096,
+  "overflow": 188,
+  "passed": true,
+  "rejected": 0,
+  "seed": "87a82156de42a32b8f5e7f635ec9590295e8e0ac5b7176f4cfe95db017c46635",
+  "status_totals": {
+    "2": 255812,
+    "6": 188
+  },
+  "storage": {
+    "auxiliary_bits": 16777216,
+    "baseline_bits": 32768000,
+    "main_bits": 18874368,
+    "official_acceptance": false,
+    "overflow_bits": 65536,
+    "physical_chip_verified": false,
+    "ratio": 1.09025,
+    "state_bits": 8192,
+    "total_bits": 35725312,
+    "within_budget": true
+  },
+  "variant": 0
+}
